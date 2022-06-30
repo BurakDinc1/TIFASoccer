@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C46DB24667BDCC00BB86FAA5 /* Pods_TIFASoccer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23B3B7F3064487D43066FAF /* Pods_TIFASoccer.framework */; };
+		CE27577028571BA00029FA07 /* MatchsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27576F28571BA00029FA07 /* MatchsView.swift */; };
+		CE27577228571C650029FA07 /* MatchsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27577128571C650029FA07 /* MatchsViewModel.swift */; };
+		CE27577428571CA80029FA07 /* MatchsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27577328571CA80029FA07 /* MatchsModel.swift */; };
+		CE275776285721680029FA07 /* MatchCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE275775285721680029FA07 /* MatchCardCell.swift */; };
+		CE2EB782286C3E2300E3BEE7 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2EB781286C3E2300E3BEE7 /* UpdateProfileView.swift */; };
+		CE2EB784286C431F00E3BEE7 /* UpdateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2EB783286C431F00E3BEE7 /* UpdateProfileViewModel.swift */; };
+		CE2EB786286C437600E3BEE7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2EB785286C437600E3BEE7 /* Enums.swift */; };
+		CE3B5B372853231D00057A37 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B5B362853231D00057A37 /* PlayersView.swift */; };
+		CE3B5B392853234000057A37 /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B5B382853234000057A37 /* PlayersViewModel.swift */; };
+		CE3B5B3C2853256900057A37 /* PlayerCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B5B3B2853256900057A37 /* PlayerCardCell.swift */; };
+		CE3B5B3E2853353400057A37 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B5B3D2853353400057A37 /* RefreshableScrollView.swift */; };
+		CE3B5B4028533BEE00057A37 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B5B3F28533BEE00057A37 /* RatingView.swift */; };
+		CE42C30928585E9B00C15629 /* CreateMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C30828585E9B00C15629 /* CreateMatchView.swift */; };
+		CE42C30B2858604500C15629 /* CreateMatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C30A2858604500C15629 /* CreateMatchViewModel.swift */; };
+		CE42C30D2858CC6200C15629 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42C30C2858CC6200C15629 /* MatchDetailView.swift */; };
+		CE4DBC9028510A15004F45D4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DBC8F28510A15004F45D4 /* ImagePicker.swift */; };
+		CE648F45285B131400F88074 /* MessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE648F44285B131400F88074 /* MessageDialog.swift */; };
+		CE648F47285B3D2000F88074 /* PopUpWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE648F46285B3D2000F88074 /* PopUpWithAnimation.swift */; };
+		CE648F49285B3E3200F88074 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE648F48285B3E3200F88074 /* LottieView.swift */; };
+		CE648F4E285B3F8500F88074 /* football_area_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = CE648F4D285B3F8500F88074 /* football_area_animation.json */; };
+		CE6704AF286D97CD0072B089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6704AE286D97CD0072B089 /* LaunchScreen.storyboard */; };
+		CE6706E5286DC8C20072B089 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6706E4286DC8C20072B089 /* UpdatePasswordView.swift */; };
+		CE6706E7286DC9130072B089 /* UpdatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6706E6286DC9130072B089 /* UpdatePasswordViewModel.swift */; };
+		CE9822222864ADEF00D9864B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9822212864ADEF00D9864B /* CommentsView.swift */; };
+		CE9AE63928508EB600BCDCBD /* TIFASoccerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE63828508EB600BCDCBD /* TIFASoccerApp.swift */; };
+		CE9AE63B28508EB600BCDCBD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE63A28508EB600BCDCBD /* BaseView.swift */; };
+		CE9AE63D28508EB800BCDCBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE63C28508EB800BCDCBD /* Assets.xcassets */; };
+		CE9AE64028508EB800BCDCBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE63F28508EB800BCDCBD /* Preview Assets.xcassets */; };
+		CE9AE64A285091C900BCDCBD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE649285091C900BCDCBD /* BaseViewModel.swift */; };
+		CE9AE64D2850935200BCDCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE64C2850935200BCDCBD /* AppDelegate.swift */; };
+		CE9AE650285093C500BCDCBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE64F285093C500BCDCBD /* GoogleService-Info.plist */; };
+		CE9AE65328509A8F00BCDCBD /* FirebaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE65228509A8F00BCDCBD /* FirebaseRepository.swift */; };
+		CE9AE6552850AE8600BCDCBD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE6542850AE8600BCDCBD /* AccountView.swift */; };
+		CE9AE6582850B21300BCDCBD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE6572850B21300BCDCBD /* RegisterView.swift */; };
+		CE9AE65B2850B2C700BCDCBD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE65A2850B2C700BCDCBD /* Extension.swift */; };
+		CE9AE65E2850B36A00BCDCBD /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE65D2850B36A00BCDCBD /* RoundedCorner.swift */; };
+		CE9AE6602850C6C400BCDCBD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE65F2850C6C400BCDCBD /* SignInView.swift */; };
+		CE9AE6622850E58200BCDCBD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE6612850E58200BCDCBD /* LoadingView.swift */; };
+		CE9AE6642850E85600BCDCBD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE6632850E85600BCDCBD /* ProfileView.swift */; };
+		CE9AE6672850EAEE00BCDCBD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE6662850EAEE00BCDCBD /* UserModel.swift */; };
+		CEF1C0C228660A5000B4E572 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1C0C128660A5000B4E572 /* CommentCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EFB96135CE81337B2F2F368 /* Pods-TIFASoccer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFASoccer.release.xcconfig"; path = "Target Support Files/Pods-TIFASoccer/Pods-TIFASoccer.release.xcconfig"; sourceTree = "<group>"; };
+		8002E7B77EECEAB3A21781CF /* Pods-TIFASoccer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIFASoccer.debug.xcconfig"; path = "Target Support Files/Pods-TIFASoccer/Pods-TIFASoccer.debug.xcconfig"; sourceTree = "<group>"; };
+		CE27576F28571BA00029FA07 /* MatchsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsView.swift; sourceTree = "<group>"; };
+		CE27577128571C650029FA07 /* MatchsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsViewModel.swift; sourceTree = "<group>"; };
+		CE27577328571CA80029FA07 /* MatchsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsModel.swift; sourceTree = "<group>"; };
+		CE275775285721680029FA07 /* MatchCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardCell.swift; sourceTree = "<group>"; };
+		CE2EB781286C3E2300E3BEE7 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		CE2EB783286C431F00E3BEE7 /* UpdateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewModel.swift; sourceTree = "<group>"; };
+		CE2EB785286C437600E3BEE7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CE3B5B362853231D00057A37 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		CE3B5B382853234000057A37 /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
+		CE3B5B3B2853256900057A37 /* PlayerCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardCell.swift; sourceTree = "<group>"; };
+		CE3B5B3D2853353400057A37 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
+		CE3B5B3F28533BEE00057A37 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		CE42C30828585E9B00C15629 /* CreateMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchView.swift; sourceTree = "<group>"; };
+		CE42C30A2858604500C15629 /* CreateMatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewModel.swift; sourceTree = "<group>"; };
+		CE42C30C2858CC6200C15629 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		CE4DBC8F28510A15004F45D4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CE648F44285B131400F88074 /* MessageDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDialog.swift; sourceTree = "<group>"; };
+		CE648F46285B3D2000F88074 /* PopUpWithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWithAnimation.swift; sourceTree = "<group>"; };
+		CE648F48285B3E3200F88074 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CE648F4D285B3F8500F88074 /* football_area_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = football_area_animation.json; sourceTree = "<group>"; };
+		CE6704AE286D97CD0072B089 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE6706E4286DC8C20072B089 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
+		CE6706E6286DC9130072B089 /* UpdatePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewModel.swift; sourceTree = "<group>"; };
+		CE9822212864ADEF00D9864B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		CE9AE63528508EB600BCDCBD /* TIFASoccer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIFASoccer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9AE63828508EB600BCDCBD /* TIFASoccerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIFASoccerApp.swift; sourceTree = "<group>"; };
+		CE9AE63A28508EB600BCDCBD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CE9AE63C28508EB800BCDCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9AE63F28508EB800BCDCBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE9AE649285091C900BCDCBD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CE9AE64C2850935200BCDCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE9AE64F285093C500BCDCBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE9AE65228509A8F00BCDCBD /* FirebaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRepository.swift; sourceTree = "<group>"; };
+		CE9AE6542850AE8600BCDCBD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CE9AE6572850B21300BCDCBD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CE9AE65A2850B2C700BCDCBD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE9AE65D2850B36A00BCDCBD /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		CE9AE65F2850C6C400BCDCBD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CE9AE6612850E58200BCDCBD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CE9AE6632850E85600BCDCBD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CE9AE6662850EAEE00BCDCBD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CEF1C0C128660A5000B4E572 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		D23B3B7F3064487D43066FAF /* Pods_TIFASoccer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIFASoccer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9AE63228508EB600BCDCBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46DB24667BDCC00BB86FAA5 /* Pods_TIFASoccer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		244D481E0627C9283A8F7B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8002E7B77EECEAB3A21781CF /* Pods-TIFASoccer.debug.xcconfig */,
+				2EFB96135CE81337B2F2F368 /* Pods-TIFASoccer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D2EC487925B51905F51FAF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23B3B7F3064487D43066FAF /* Pods_TIFASoccer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3B5B3A2853254A00057A37 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B5B3B2853256900057A37 /* PlayerCardCell.swift */,
+				CE275775285721680029FA07 /* MatchCardCell.swift */,
+				CEF1C0C128660A5000B4E572 /* CommentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE648F4A285B3E9100F88074 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				CE648F4D285B3F8500F88074 /* football_area_animation.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		CE9AE62C28508EB600BCDCBD = {
+			isa = PBXGroup;
+			children = (
+				CE9AE63728508EB600BCDCBD /* TIFASoccer */,
+				CE9AE63628508EB600BCDCBD /* Products */,
+				244D481E0627C9283A8F7B1E /* Pods */,
+				7D2EC487925B51905F51FAF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9AE63628508EB600BCDCBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE63528508EB600BCDCBD /* TIFASoccer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9AE63728508EB600BCDCBD /* TIFASoccer */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE64B2850933300BCDCBD /* ApplicationSceneClasses */,
+				CE9AE64628508EF500BCDCBD /* Controllers */,
+				CE9AE648285091B400BCDCBD /* ViewModels */,
+				CE9AE65128509A7800BCDCBD /* Repositories */,
+				CE9AE6652850EAD900BCDCBD /* Models */,
+				CE3B5B3A2853254A00057A37 /* Cells */,
+				CE9AE65C2850B35800BCDCBD /* CustomViews */,
+				CE9AE64E285093A500BCDCBD /* Firebase */,
+				CE9AE6592850B2B600BCDCBD /* Helper */,
+				CE9AE64728508EFE00BCDCBD /* Resources */,
+				CE9AE63E28508EB800BCDCBD /* Preview Content */,
+			);
+			path = TIFASoccer;
+			sourceTree = "<group>";
+		};
+		CE9AE63E28508EB800BCDCBD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE63F28508EB800BCDCBD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE9AE64628508EF500BCDCBD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE63A28508EB600BCDCBD /* BaseView.swift */,
+				CE9AE6562850B1FA00BCDCBD /* AccountViews */,
+				CE3B5B362853231D00057A37 /* PlayersView.swift */,
+				CE27576F28571BA00029FA07 /* MatchsView.swift */,
+				CE42C30828585E9B00C15629 /* CreateMatchView.swift */,
+				CE42C30C2858CC6200C15629 /* MatchDetailView.swift */,
+				CE9822212864ADEF00D9864B /* CommentsView.swift */,
+				CE2EB781286C3E2300E3BEE7 /* UpdateProfileView.swift */,
+				CE6706E4286DC8C20072B089 /* UpdatePasswordView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE9AE64728508EFE00BCDCBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE648F4A285B3E9100F88074 /* LottieAnimations */,
+				CE9AE63C28508EB800BCDCBD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE9AE648285091B400BCDCBD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE649285091C900BCDCBD /* BaseViewModel.swift */,
+				CE3B5B382853234000057A37 /* PlayersViewModel.swift */,
+				CE27577128571C650029FA07 /* MatchsViewModel.swift */,
+				CE42C30A2858604500C15629 /* CreateMatchViewModel.swift */,
+				CE2EB783286C431F00E3BEE7 /* UpdateProfileViewModel.swift */,
+				CE6706E6286DC9130072B089 /* UpdatePasswordViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE9AE64B2850933300BCDCBD /* ApplicationSceneClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE63828508EB600BCDCBD /* TIFASoccerApp.swift */,
+				CE9AE64C2850935200BCDCBD /* AppDelegate.swift */,
+				CE6704AE286D97CD0072B089 /* LaunchScreen.storyboard */,
+			);
+			path = ApplicationSceneClasses;
+			sourceTree = "<group>";
+		};
+		CE9AE64E285093A500BCDCBD /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE64F285093C500BCDCBD /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CE9AE65128509A7800BCDCBD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE65228509A8F00BCDCBD /* FirebaseRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CE9AE6562850B1FA00BCDCBD /* AccountViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE6542850AE8600BCDCBD /* AccountView.swift */,
+				CE9AE6572850B21300BCDCBD /* RegisterView.swift */,
+				CE9AE65F2850C6C400BCDCBD /* SignInView.swift */,
+				CE9AE6632850E85600BCDCBD /* ProfileView.swift */,
+			);
+			path = AccountViews;
+			sourceTree = "<group>";
+		};
+		CE9AE6592850B2B600BCDCBD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE65A2850B2C700BCDCBD /* Extension.swift */,
+				CE2EB785286C437600E3BEE7 /* Enums.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE9AE65C2850B35800BCDCBD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE65D2850B36A00BCDCBD /* RoundedCorner.swift */,
+				CE9AE6612850E58200BCDCBD /* LoadingView.swift */,
+				CE4DBC8F28510A15004F45D4 /* ImagePicker.swift */,
+				CE3B5B3D2853353400057A37 /* RefreshableScrollView.swift */,
+				CE3B5B3F28533BEE00057A37 /* RatingView.swift */,
+				CE648F44285B131400F88074 /* MessageDialog.swift */,
+				CE648F46285B3D2000F88074 /* PopUpWithAnimation.swift */,
+				CE648F48285B3E3200F88074 /* LottieView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CE9AE6652850EAD900BCDCBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AE6662850EAEE00BCDCBD /* UserModel.swift */,
+				CE27577328571CA80029FA07 /* MatchsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9AE63428508EB600BCDCBD /* TIFASoccer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9AE64328508EB800BCDCBD /* Build configuration list for PBXNativeTarget "TIFASoccer" */;
+			buildPhases = (
+				99FE2A2C9CA1FD4BF8A99116 /* [CP] Check Pods Manifest.lock */,
+				CE9AE63128508EB600BCDCBD /* Sources */,
+				CE9AE63228508EB600BCDCBD /* Frameworks */,
+				CE9AE63328508EB600BCDCBD /* Resources */,
+				D2984F659559A12A117258E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TIFASoccer;
+			productName = TIFASoccer;
+			productReference = CE9AE63528508EB600BCDCBD /* TIFASoccer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9AE62D28508EB600BCDCBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CE9AE63428508EB600BCDCBD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CE9AE63028508EB600BCDCBD /* Build configuration list for PBXProject "TIFASoccer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9AE62C28508EB600BCDCBD;
+			productRefGroup = CE9AE63628508EB600BCDCBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9AE63428508EB600BCDCBD /* TIFASoccer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9AE63328508EB600BCDCBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9AE64028508EB800BCDCBD /* Preview Assets.xcassets in Resources */,
+				CE9AE63D28508EB800BCDCBD /* Assets.xcassets in Resources */,
+				CE648F4E285B3F8500F88074 /* football_area_animation.json in Resources */,
+				CE6704AF286D97CD0072B089 /* LaunchScreen.storyboard in Resources */,
+				CE9AE650285093C500BCDCBD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99FE2A2C9CA1FD4BF8A99116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIFASoccer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2984F659559A12A117258E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFASoccer/Pods-TIFASoccer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TIFASoccer/Pods-TIFASoccer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TIFASoccer/Pods-TIFASoccer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9AE63128508EB600BCDCBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE648F49285B3E3200F88074 /* LottieView.swift in Sources */,
+				CE2EB782286C3E2300E3BEE7 /* UpdateProfileView.swift in Sources */,
+				CE6706E5286DC8C20072B089 /* UpdatePasswordView.swift in Sources */,
+				CE9AE6552850AE8600BCDCBD /* AccountView.swift in Sources */,
+				CE9822222864ADEF00D9864B /* CommentsView.swift in Sources */,
+				CE9AE64D2850935200BCDCBD /* AppDelegate.swift in Sources */,
+				CE9AE63B28508EB600BCDCBD /* BaseView.swift in Sources */,
+				CE4DBC9028510A15004F45D4 /* ImagePicker.swift in Sources */,
+				CE2EB784286C431F00E3BEE7 /* UpdateProfileViewModel.swift in Sources */,
+				CE9AE6622850E58200BCDCBD /* LoadingView.swift in Sources */,
+				CE6706E7286DC9130072B089 /* UpdatePasswordViewModel.swift in Sources */,
+				CE9AE6642850E85600BCDCBD /* ProfileView.swift in Sources */,
+				CE9AE6672850EAEE00BCDCBD /* UserModel.swift in Sources */,
+				CE9AE65E2850B36A00BCDCBD /* RoundedCorner.swift in Sources */,
+				CE3B5B3C2853256900057A37 /* PlayerCardCell.swift in Sources */,
+				CE648F45285B131400F88074 /* MessageDialog.swift in Sources */,
+				CE9AE6602850C6C400BCDCBD /* SignInView.swift in Sources */,
+				CE648F47285B3D2000F88074 /* PopUpWithAnimation.swift in Sources */,
+				CE9AE6582850B21300BCDCBD /* RegisterView.swift in Sources */,
+				CE27577228571C650029FA07 /* MatchsViewModel.swift in Sources */,
+				CE9AE63928508EB600BCDCBD /* TIFASoccerApp.swift in Sources */,
+				CE9AE65328509A8F00BCDCBD /* FirebaseRepository.swift in Sources */,
+				CE42C30B2858604500C15629 /* CreateMatchViewModel.swift in Sources */,
+				CE3B5B392853234000057A37 /* PlayersViewModel.swift in Sources */,
+				CE2EB786286C437600E3BEE7 /* Enums.swift in Sources */,
+				CE27577028571BA00029FA07 /* MatchsView.swift in Sources */,
+				CE9AE64A285091C900BCDCBD /* BaseViewModel.swift in Sources */,
+				CE9AE65B2850B2C700BCDCBD /* Extension.swift in Sources */,
+				CE42C30D2858CC6200C15629 /* MatchDetailView.swift in Sources */,
+				CE3B5B372853231D00057A37 /* PlayersView.swift in Sources */,
+				CE275776285721680029FA07 /* MatchCardCell.swift in Sources */,
+				CE42C30928585E9B00C15629 /* CreateMatchView.swift in Sources */,
+				CEF1C0C228660A5000B4E572 /* CommentCell.swift in Sources */,
+				CE27577428571CA80029FA07 /* MatchsModel.swift in Sources */,
+				CE3B5B4028533BEE00057A37 /* RatingView.swift in Sources */,
+				CE3B5B3E2853353400057A37 /* RefreshableScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE9AE64128508EB800BCDCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE9AE64228508EB800BCDCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9AE64428508EB800BCDCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8002E7B77EECEAB3A21781CF /* Pods-TIFASoccer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-TIFASoccer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TIFASoccer/Preview Content\"";
+				DEVELOPMENT_TEAM = CZL9G5PT22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnc.TIFASoccer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9AE64528508EB800BCDCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EFB96135CE81337B2F2F368 /* Pods-TIFASoccer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-TIFASoccer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TIFASoccer/Preview Content\"";
+				DEVELOPMENT_TEAM = CZL9G5PT22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnc.TIFASoccer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9AE63028508EB600BCDCBD /* Build configuration list for PBXProject "TIFASoccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9AE64128508EB800BCDCBD /* Debug */,
+				CE9AE64228508EB800BCDCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9AE64328508EB800BCDCBD /* Build configuration list for PBXNativeTarget "TIFASoccer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9AE64428508EB800BCDCBD /* Debug */,
+				CE9AE64528508EB800BCDCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9AE62D28508EB600BCDCBD /* Project object */;
+}
