@@ -9,23 +9,6 @@ import SwiftUI
 import Kingfisher
 import ExytePopupView
 
-enum PlayerPosition: String, CaseIterable {
-    case A0 = "A0"
-    case A1 = "A1"
-    case A2 = "A2"
-    case A3 = "A3"
-    case A4 = "A4"
-    case A5 = "A5"
-    case A6 = "A6"
-    case B0 = "B0"
-    case B1 = "B1"
-    case B2 = "B2"
-    case B3 = "B3"
-    case B4 = "B4"
-    case B5 = "B5"
-    case B6 = "B6"
-}
-
 struct MatchDetailView: View {
     
     @State var matchID: String
@@ -42,7 +25,8 @@ struct MatchDetailView: View {
                             ForEach(self.matchsViewModel.unselectedPlayer, id: \.uuid) { player in
                                 // MARK: - Top List
                                 if let playerImage = player.picture,
-                                   let playerName = player.nameSurname {
+                                   let playerName = player.nameSurname,
+                                   let playerMevki = player.position {
                                     Menu {
                                         if(self.baseViewModel.userModel?.authority == "admin") {
                                             ForEach(PlayerPosition.allCases, id: \.rawValue) { position in
@@ -77,7 +61,20 @@ struct MatchDetailView: View {
                                             Text(playerName)
                                                 .foregroundColor(.black)
                                                 .font(Font.system(size: 13))
-                                        }
+                                        }.overlay(
+                                            ZStack(alignment: .center) {
+                                                Image(systemName: playerMevki.getPositionImageName())
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 15, height: 15, alignment: .center)
+                                                    .foregroundColor(.black)
+                                            }
+                                            .padding(4)
+                                            .background(Color.white)
+                                            .cornerRadius(30)
+                                            .shadow(color: Color.black.opacity(0.1), radius: 15, x: 0, y: 0),
+                                            alignment: .topTrailing
+                                        )
                                     }
                                 }
                             }
