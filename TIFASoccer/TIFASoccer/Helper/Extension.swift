@@ -77,6 +77,25 @@ extension String {
         }
         return nil
     }
+    
+    func getPositionImageName() -> String {
+        switch self {
+        case Mevki.solKanat.rawValue, Mevki.sagKanat.rawValue:
+            return "lungs"
+        case Mevki.kaleci.rawValue:
+            return "hands.sparkles"
+        case Mevki.ortaSaha.rawValue:
+            return "brain"
+        case Mevki.sagBek.rawValue, Mevki.solBek.rawValue:
+            return "bolt.heart"
+        case Mevki.stoper.rawValue:
+            return "shield.lefthalf.filled"
+        case Mevki.joker.rawValue:
+            return "tshirt"
+        default:
+            return "tshirt"
+        }
+    }
 }
 
 // MARK: - Date

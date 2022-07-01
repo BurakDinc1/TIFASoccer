@@ -60,20 +60,7 @@ struct UpdateProfileView: View {
                                 self.updateProfileViewModel.position = mevki.rawValue
                             } label: {
                                 Text(mevki.rawValue)
-                                switch mevki {
-                                case .solKanat, .sagKanat:
-                                    Image(systemName: "lungs")
-                                case .kaleci:
-                                    Image(systemName: "hands.sparkles")
-                                case .ortaSaha:
-                                    Image(systemName: "brain")
-                                case .sagBek, .solBek:
-                                    Image(systemName: "bolt.heart")
-                                case .stoper:
-                                    Image(systemName: "shield.lefthalf.filled")
-                                case .joker:
-                                    Image(systemName: "tshirt")
-                                }
+                                Image(systemName: mevki.rawValue.getPositionImageName())
                             }
                         }
                     } label: {
