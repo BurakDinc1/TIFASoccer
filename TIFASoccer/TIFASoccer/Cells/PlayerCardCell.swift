@@ -21,7 +21,8 @@ struct PlayerCardCell: View {
                         .resizable()
                         .placeholder({
                             LoadingView()
-                                .fillAll()
+                                .frame(height: 240, alignment: .center)
+                                .fillWidth()
                         })
                         .loadDiskFileSynchronously()
                         .cacheMemoryOnly()
